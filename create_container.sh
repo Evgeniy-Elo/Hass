@@ -49,7 +49,7 @@ TEMP_DIR=$(mktemp -d)
 pushd $TEMP_DIR >/dev/null
 
 # Download setup script
-wget -qL https://raw.githubusercontent.com/Evgeniy-Elo/Hass/9da561561236b05b36d8e1cd794c8337d487b997/setup.sh
+wget -qL https://raw.githubusercontent.com/Evgeniy-Elo/Hass/main/setup.sh
 
 # Select storage location
 STORAGE_LIST=( $(pvesm status -content rootdir | awk 'NR>1 {print $1}') )
