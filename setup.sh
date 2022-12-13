@@ -26,8 +26,7 @@ apt-get autoremove >/dev/null
 
 # Update container OS
 msg "Updating container OS..."
-#apt-get update >/dev/null
-apt-get --allow-releaseinfo-change update >/dev/null
+apt-get update >/dev/null
 apt-get -qqy upgrade &>/dev/null
 
 # Install prerequisites
@@ -69,3 +68,10 @@ systemctl start motioneye
 # Cleanup container
 msg "Cleanup..."
 rm -rf /setup.sh /var/{cache,log}/* /var/lib/apt/lists/*
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
